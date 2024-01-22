@@ -1,0 +1,45 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.neptune.asm.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinInGameOverlayRenderer"
+  ],
+  "client": [
+    "ICustomPayloadC2SPacket",
+    "IExplosionS2CPacket",
+    "IMinecraft",
+    "IPlayerMoveC2SPacket",
+    "MixinAbstractBlockState",
+    "MixinBlockEntityRenderDispatcher",
+    "MixinChatHud",
+    "MixinChatHudLine",
+    "MixinChatHudLineVisible",
+    "MixinChunkOcclusionDataBuilder",
+    "MixinClientConnection",
+    "MixinClientPlayerEntity",
+    "MixinClientPlayerInteractionManager",
+    "MixinClientPlayNetworkHandler",
+    "MixinClientWorld",
+    "MixinExplosion",
+    "MixinGameRenderer",
+    "MixinHeldItemRenderer",
+    "MixinKeyboard",
+    "MixinLightmapTextureManager",
+    "MixinLivingEntity",
+    "MixinMinecraft",
+    "MixinMouse",
+    "MixinParticleManager",
+    "MixinRaycastContext",
+    "MixinSubtitlesHud",
+    "MixinTerrainRenderContext",
+    "MixinVec3d",
+    "MixinXCarry$MixinClientPlayNetworkHandler",
+    "RenderTickCounterMixin",
+    "MixinEntity"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
