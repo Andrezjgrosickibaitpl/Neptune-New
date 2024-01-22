@@ -20,11 +20,11 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
     
-    - name: Build LavaHack
+    - name: Build Neptune
       run: |
-          ./gradlew clean
           ./gradlew setupDecompWorkspace
           ./gradlew build
+          
       - name: List files
         run: ls
       - name: Upload a Build Artifact
