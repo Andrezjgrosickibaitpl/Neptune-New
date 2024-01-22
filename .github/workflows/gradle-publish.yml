@@ -27,5 +27,5 @@ jobs:
       - name: Upload client fabric jar
         uses: actions/upload-artifact@v3
         with:
-          name: PingBypass
-          path: ./
+          name: Neptune-New
+          path: ./build/
