@@ -22,10 +22,15 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build jars
-        run: ./gradlew build
-
+        run: |
+          ./gradlew clean
+          ./gradlew setupDecompWorkspace
+          ./gradlew build
+          ./gradlew refmapper
+          ./make
+          
       - name: Upload client fabric jar
         uses: actions/upload-artifact@v3
         with:
-          name: Neptune-New
+          name: Neptune
           path: ./build/
